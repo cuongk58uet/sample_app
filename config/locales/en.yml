@@ -25,6 +25,27 @@ en:
       welcome-two: "sample application."
       link_tutorial: "http://www.railstutorials.org/"
       link_book: "http://rubyonrails.org/"
+    about:
+      about: "About"
+      about_text_1: "The"
+      link_text: "Ruby on Rails Tutorial"
+      about_text_2: "is a"
+      link_text_2: "book"
+      and: "and"
+      link_text_3: "screencast series"
+      about_text_3: " to teach web development with"
+      link_text_4: " Ruby on Rails"
+      about_text_4: ".This is the sample application for the tutorial."
+    contact:
+      contact: "Contact"
+      contact_text: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      link_contact: "contact page"
+    help:
+      help: "Help"
+      help_text_1: "Get help on the Ruby on Rails Tutorial at the"
+      link_help_1: "Rails Tutorial help section"
+      help_text_2: "To get help on this sample app, see the"
+      link_help_2: "Ruby on Rails Tutorial book"
   users:
     new:
       signup: "Sign up"
