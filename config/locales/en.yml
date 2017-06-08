@@ -50,3 +50,12 @@ en:
     new:
       signup: "Sign up"
       new: "This will be a signup page for new users."
+      confirmation: "Confirmation"
+      submit: "Create my account"
+    create:
+      signup_success: "Welcome to the Sample App!"
+      signup_error: "Error occurred. Please try again"
+    show:
+      not_found: "User not found. Try again!"
+  shared:
+    error_message: "The form contains"
