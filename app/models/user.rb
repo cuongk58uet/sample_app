@@ -8,7 +8,8 @@ class User < ApplicationRecord
   validates :email, presence: true, length: {maximum: Settings.email.maximum},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   has_secure_password
-  validates :password, presence: true, length: {minimum: Settings.password.minimum}
+  validates :password, presence: true, length: {minimum: Settings.password.minimum},
+    allow_nil: true
 
   class << self
     def digest string
@@ -34,5 +35,9 @@ class User < ApplicationRecord
 
   def forget
     update_attributes remember_digest: nil
+  end
+
+  def compare_user user
+    self == user
   end
 end
