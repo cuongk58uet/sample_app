@@ -57,11 +57,27 @@ en:
       new: "This will be a signup page for new users."
       confirmation: "Confirmation"
       submit: "Create my account"
+      create_account: "Create my account"
     create:
       signup_success: "Welcome to the Sample App!"
       signup_error: "Error occurred. Please try again"
     show:
       not_found: "User not found. Try again!"
+    update:
+      update: "Profile updated"
+    destroy:
+      delete: "User deleted"
+      error_delete: "Delete error. Try again!"
+    index:
+      all_users: "All users"
+    user:
+      confirm: "You sure?"
+      delete: "Delete"
+    edit:
+      edit: "Edit user"
+      save_change: "Save changes"
+      update_profile: "Update your profile"
+      change: "Change"
   shared:
     error_message: "The form contains"
   sessions:
@@ -72,3 +88,4 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
+  login_first: "Please log in."
