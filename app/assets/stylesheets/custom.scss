@@ -7,6 +7,7 @@ $shadow-one: #fff;
 $shadow-two: #555;
 $shadow-three: #222;
 $shadow: #bbb;
+$silver: #e8e8e8;
 
 @mixin box_sizing {
   box-sizing: border-box;
@@ -194,5 +195,51 @@ footer {
     border-bottom: 1px solid $light-gray;
     overflow: auto;
     padding: 10px 0;
+  }
+}
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    border-top: 1px solid $silver;
+    padding: 10px 0;
+  }
+
+  .user {
+    margin-top: 5em;
+  }
+
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      padding: 5px 0;
+    }
+  }
+
+  .timestamp {
+    color: $light-gray;
+    display: block;
+    margin-left: 60px;
+  }
+
+  .gravatar {
+    float: left;
+    margin: 5px 10px 0px 0px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
   }
 }

@@ -12,3 +12,9 @@ paginate:
   size: 10
 hours_expired:
   time: 2
+content:
+  max_length: 140
+picture_size:
+  capacity_value: 1
+  size_value: 400
+
