@@ -30,6 +30,7 @@ en:
       welcome-two: "sample application."
       link_tutorial: "http://www.railstutorials.org/"
       link_book: "http://rubyonrails.org/"
+      micropost_feed: "Micropost Feed"
     about:
       about: "About"
       about_text_1: "The"
@@ -64,6 +65,7 @@ en:
       email_activated: "Please check your email to activate your account."
     show:
       not_found: "User not found. Try again!"
+      microposts: "Microposts"
     update:
       update: "Profile updated"
     destroy:
@@ -71,6 +73,7 @@ en:
       error_delete: "Delete error. Try again!"
     index:
       all_users: "All users"
+      login_first: "Please log in."
     user:
       confirm: "You sure?"
       delete: "Delete"
@@ -80,7 +83,13 @@ en:
       update_profile: "Update your profile"
       change: "Change"
   shared:
-    error_message: "The form contains"
+    error_messages:
+      error_message: "The form contains"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      my_profile: "View My Profile"
   sessions:
     new:
       title: "Log in"
@@ -121,3 +130,15 @@ en:
       confirmation: "Confirmation"
       update_password: "Update password"
   login_first: "Please log in."
+  application:
+    login_first: "Please log in."
+  microposts:
+    micropost_created: "Micropost created!"
+    micropost_delete: "Micropost deleted"
+    micropost_delete_error: "Error! Please check and try again."
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      delete: "Delete"
+  confirm: "You sure?"
+  error: "Should be less than 1MB"
