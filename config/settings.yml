@@ -10,3 +10,5 @@ avatar_index_page:
   size: 50
 paginate:
   size: 10
+hours_expired:
+  time: 2
