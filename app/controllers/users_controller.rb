@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :verify_admin, only: :destroy
 
   def index
-    @users = User.select(:id, :name, :email).order(name: :asc).paginate page: params[:page],
+    @users = User.select(:id, :name, :email).order(id: :asc).paginate page: params[:page],
       per_page: Settings.paginate.size
   end
 
@@ -51,6 +51,20 @@ class UsersController < ApplicationController
       flash[:warning] = t ".error_delete"
       redirect_to users_url
     end
+  end
+
+  def following
+    @title = t "following"
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.paginate.size
+    render "show_follow"
+  end
+
+  def followers
+    @title = t ".follower"
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.paginate.size
+    render "show_follow"
   end
 
   private

@@ -82,6 +82,15 @@ en:
       save_change: "Save changes"
       update_profile: "Update your profile"
       change: "Change"
+    unfollow:
+      unfollow: "Unfollow"
+    follow:
+      follow: "Follow"
+    followers:
+      follower: "Followers"
+    show_follow:
+      my_profile: "View my profile"
+      microposts: "Microposts:"
   shared:
     error_messages:
       error_message: "The form contains"
@@ -90,6 +99,9 @@ en:
       post: "Post"
     user_info:
       my_profile: "View My Profile"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       title: "Log in"
@@ -142,3 +154,4 @@ en:
       delete: "Delete"
   confirm: "You sure?"
   error: "Should be less than 1MB"
+  following: "Following"
