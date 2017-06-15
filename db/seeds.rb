@@ -17,8 +17,16 @@ User.create! name: "Example User",
     activated: true,
     activated_at: Time.zone.now
 end
-users = User.order(:created_at).take 2
-1.times do
+
+users = User.order(:created_at).take 5
+15.times do
   content = Faker::Lorem.sentence 5
   users.each{|user| user.microposts.create! content: content}
 end
+
+users = User.all
+user  = users.first
+following = users[2..10]
+followers = users[3..15]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }
